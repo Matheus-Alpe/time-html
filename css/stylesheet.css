@@ -1,154 +1,91 @@
-body {
-    background-image: linear-gradient(blue, red)
-}
+/*
 
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
-}
+    duda, 
+    pra tirar o pontinho do layout só apagar ou apenas comentar o código
+    que está no fim desse arquivo
 
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(0, 0, 0);
-}
 
-header ul {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    align-items: center;
-}
-
-.link ul {
-    width: 150pt;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-.link:hover {
-    opacity: 1;
-    background-color: rgba(174, 194, 247, 0.103);
-    border-radius: 50pt;
-}
-
-.titulo {
-    font-size: 30px;
-    text-align: center;
-}
-
-.subtitulo {
-    font-size: 20px;
-    color: darkgray;
-    text-align: center;
-    line-height: 0;
-}
+*/
 
 .container {
-    color: rgb(0, 0, 0);
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto minmax(83vh, auto);
-    grid-template-areas: "header header header header""aside main main main";
-}
-
-header {
-    border-top-right-radius: 50pt;
-    border-top-left-radius: 50pt;
-    background-color: rgba(255, 255, 255);
-    grid-area: header;
+    background-color: white;
+    box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.1);
 }
 
 aside {
-    border-bottom-left-radius: 50pt;
-    background-color: rgb(255, 255, 255);
-    grid-area: aside;
-    width: 100%;
-    padding: 0 4rem 1rem 1rem;
-    
+    box-shadow: 0 -2px 5px -2px rgba(0, 0, 0, .1);
 }
 
-aside ul {
-    display: inline;
-    margin: 3rem 0 0;
-    padding: 0;
+aside .lista-paginas {
     display: flex;
     flex-direction: column;
-    
+    justify-content: space-around;
+
+    list-style: none;
+    padding: 0;
+    margin-top: 1em;
+    height: 50%;
 }
 
-aside li {
-    line-height: 25pt;
-    width: 240px;
-    font-family: 'Lucida Sans';
-    font-size: 48px;
-    padding: 5px;
-    margin: 5px 5px 4rem;
+main section {
+    min-height: 80vh;
+    box-shadow: -2px -2px 5px -2px rgba(0, 0, 0, .1);
 }
 
-aside li:hover {
-    opacity: 1;
-    background-color: rgba(238, 58, 58, 0.103);
-    border-radius: 40pt;
+section .titulo-section {
+    margin: .5em 0 1em 0;
 }
 
-main {
-    background-color: rgb(255, 255, 255);
-    grid-area: main;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 10px;
-    border-bottom-right-radius: 50pt;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+section .card {
+    margin: .3em;
+    padding: .3em;
+    flex: 1;
+    gap: .5rem;
+}
+
+section p {
+    margin: 1.4em 0;
+}
+
+footer {
+    box-shadow: -2px -2px 5px -2px rgba(0, 0, 0, .1);
+    margin-top: 1em;
+    height: 10vh;
+}
+
+@media (max-width: 767px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .logo {
+        display: block;
+    }
+
+    aside .lista-paginas {
+        flex-direction: row;
+    }
+
+    aside .lista-paginas li {
+        margin-right: 1em;
+    }
+
+    main .abas-principais {
+        flex-direction: column;
+    }
 }
 
 
-a {
-    text-decoration: none;
+
+
+/*  REMOVE O PONTOS DO LAYOUT */
+/* .my-r {
+    border: 1px dotted green;
 }
 
-a:visited {
-    color: inherit;
-}
-
-table {
-    margin-top: 3rem;
-    display: inline-flex;
-    padding-left: 75pt;
-    vertical-align: middle;
-}
-
-form {
-    border-width: auto;
-    line-height: 50pt;
-    text-align: left;
-    margin-right: 2rem;
-}
-
-fieldset {
-    padding: 0 5rem;
-}
-
-textarea {
-    resize: none;
-}
-
-.box-msg {
-    display: flex;
-    align-items: baseline;
-}
-
-.box-msg label {
-    margin-right: 5px;
-}
+.my-c {
+    border: 1px dotted purple;
+} */
