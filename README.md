@@ -10,3 +10,8 @@
 ### Sobre
 
 Respositório para armazenar atividade da aula de Design Homem Interface com intuito de aprendizado. 
+
+### Feito por:
+
+- Maria Eduarda
+- Matheus Alves
